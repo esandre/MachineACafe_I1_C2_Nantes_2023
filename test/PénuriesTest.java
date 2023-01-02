@@ -1,5 +1,8 @@
+import machineacafe.Machine;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import utilities.MachineBuilder;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class PénuriesTest {
@@ -10,7 +13,7 @@ public class PénuriesTest {
             "ET l'argent est rendu")
     public void Test_Sans_Eau(){
         // ETANT DONNE une machine n'ayant plus d'eau
-        Machine machine = new Machine();
+        Machine machine = MachineBuilder.Default();
         machine.CouperEau();
 
         int nombreCaféInitiaux = machine.GetNombreCafésServis();
@@ -35,7 +38,9 @@ public class PénuriesTest {
             "ET l'argent est rendu")
     public void Test_Sans_Gobelet(){
         // ETANT DONNE une machine n'ayant pas de gobelets
-        Machine machine = new Machine(0, 1);
+        Machine machine = new MachineBuilder()
+                .SansGobelets()
+                .Build();
 
         int nombreCaféInitiaux = machine.GetNombreCafésServis();
         double argentEncaisséInitial = machine.GetArgentEncaissé();
@@ -59,7 +64,9 @@ public class PénuriesTest {
             "ET l'argent est rendu")
     public void Test_Sans_Café(){
         // ETANT DONNE une machine n'ayant pas de café
-        Machine machine = new Machine(1, 0);
+        Machine machine = new MachineBuilder()
+                .SansCafé()
+                .Build();
 
         int nombreCaféInitiaux = machine.GetNombreCafésServis();
         double argentEncaisséInitial = machine.GetArgentEncaissé();

@@ -1,7 +1,9 @@
+import machineacafe.Machine;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
+import utilities.MachineBuilder;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -11,7 +13,7 @@ public class MachineACafeTest {
     @ValueSource(doubles = {0.40, 0.41})
     public void Test_Cafe_Coule(double sommeInsérée){
         // ETANT DONNE une machine
-        Machine machine = new Machine();
+        Machine machine = MachineBuilder.Default();
         int nombreCaféInitiaux = machine.GetNombreCafésServis();
         double argentEncaisséInitial = machine.GetArgentEncaissé();
 
@@ -31,7 +33,7 @@ public class MachineACafeTest {
     @DisplayName("QUAND on met moins de 40cts ALORS aucun café ne coule ET l'argent est rendu")
     public void Test_Pas_Assez_Argent(){
         // ETANT DONNE une machine
-        Machine machine = new Machine();
+        Machine machine = MachineBuilder.Default();
         int nombreCaféInitiaux = machine.GetNombreCafésServis();
         double argentEncaisséInitial = machine.GetArgentEncaissé();
         double sommeInsuffisante = 0.39;

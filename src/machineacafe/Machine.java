@@ -1,14 +1,11 @@
+package machineacafe;
+
 public class Machine {
     private int _nombreCafésServis = 0;
     private double _argentEncaissé = 0;
-
     private boolean _eauDisponible = true;
-
     private boolean _gobeletsDisponibles = true;
     private boolean _caféEnStock = true;
-
-    public Machine(){
-    }
 
     public Machine(int nombreGobeletsInitial, int dosesCaféInitiales) {
         _gobeletsDisponibles = nombreGobeletsInitial > 0; // TODO : contradiction à résoudre avec le client
