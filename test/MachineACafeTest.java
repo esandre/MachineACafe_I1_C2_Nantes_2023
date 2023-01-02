@@ -1,16 +1,19 @@
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class MachineACafeTest {
-    @Test
-    @DisplayName("QUAND on met 40cts ALORS un café coule ET l'argent est encaissé")
-    public void Test_Cafe_Coule(){
+    @ParameterizedTest
+    @DisplayName("QUAND on met au moins 40cts ALORS un café coule ET l'argent est encaissé")
+    @ValueSource(doubles = {0.40, 0.41})
+    public void Test_Cafe_Coule(double sommeInsérée){
         // ETANT DONNE une machine
         Machine machine = new Machine();
         int nombreCaféInitiaux = machine.GetNombreCafésServis();
         double argentEncaisséInitial = machine.GetArgentEncaissé();
-        double sommeInsérée = 0.40;
 
         // QUAND on met 40cts
         machine.Insérer(sommeInsérée);
