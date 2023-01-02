@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c22d6fd-ea5d-42db-afe8-0d061247ef2d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test/utilities/MachineBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/StocksTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Machine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/machineacafe/Machine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/MachineACafeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/MachineACafeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/PénuriesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/PénuriesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/machineacafe/Machine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/machineacafe/Machine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/utilities/MachineBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/utilities/MachineBuilder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +98,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672659036495</updated>
-      <workItem from="1672659037700" duration="5767000" />
+      <workItem from="1672659037700" duration="8039000" />
     </task>
     <servers />
   </component>
