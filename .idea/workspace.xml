@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c22d6fd-ea5d-42db-afe8-0d061247ef2d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/machineacafe/Ressource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/machineacafe/RessourceInfinie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/machineacafe/RessourceStockée.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/lib.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/net/bank/interop/ModulePrelevementAutomatique.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/net/bank/interop/ModuleSansContact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/recette/Demo20230103.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/machineacafe/Machine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/machineacafe/Machine.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -58,7 +59,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.All in test">
+  <component name="RunManager" selected="JUnit.Demo20230103.DemoCafesAssortis">
     <configuration name="All in MachineACafe" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MachineACafe" />
       <option name="PACKAGE_NAME" value="" />
@@ -75,6 +76,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Demo20230103" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="recette.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="recette" />
+      <option name="MAIN_CLASS_NAME" value="recette.Demo20230103" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo20230103.DemoCafesAssortis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="recette.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="recette" />
+      <option name="MAIN_CLASS_NAME" value="recette.Demo20230103" />
+      <option name="METHOD_NAME" value="DemoCafesAssortis" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MachineACafeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <option name="PACKAGE_NAME" value="" />
@@ -86,6 +118,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Demo20230103.DemoCafesAssortis" />
+        <item itemvalue="JUnit.Demo20230103" />
         <item itemvalue="JUnit.All in test" />
         <item itemvalue="JUnit.All in MachineACafe" />
         <item itemvalue="JUnit.MachineACafeTest" />
@@ -101,7 +135,7 @@
       <option name="presentableId" value="Default" />
       <updated>1672659036495</updated>
       <workItem from="1672659037700" duration="10688000" />
-      <workItem from="1672730276470" duration="8793000" />
+      <workItem from="1672730276470" duration="13806000" />
     </task>
     <servers />
   </component>
