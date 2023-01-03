@@ -36,6 +36,7 @@ public class StocksTest {
 
     @Test
     @DisplayName("ETANT DONNE une machine ayant une seule dose de café " +
+            "ET au moins 2 gobelets" +
             "QUAND on insère deux fois 40 cts " +
             "ALORS seul un café coule " +
             "ET l'argent du second café est rendu")
@@ -43,6 +44,7 @@ public class StocksTest {
         // ETANT DONNE une machine ayant une seule dose de café
         Machine machine = new MachineBuilder()
                 .AyantYDosesDeCafé(1)
+                .AyantXGobelets(2)
                 .Build();
 
         int nombreCaféInitiaux = machine.GetNombreCafésServis();
