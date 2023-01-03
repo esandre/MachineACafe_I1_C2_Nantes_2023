@@ -1,5 +1,7 @@
 package machineacafe;
 
+import net.bank.interop.ModulePrelevementAutomatique;
+
 public class Machine {
     private int _nombreCafésServis = 0;
     private double _argentEncaissé = 0;
@@ -9,11 +11,18 @@ public class Machine {
     private final RessourceStockée _sucre;
     private boolean _boutonSucreAppuyé = false;
 
+    private ModulePrelevementAutomatique _modulePrelevementAutomatique = null;
+
     public Machine(){
         _gobelets = new RessourceStockée(1);
         _café = new RessourceStockée(1);
         _sucre = new RessourceStockée(1);
         _eau = new RessourceInfinie(true);
+    }
+
+    public Machine(ModulePrelevementAutomatique module){
+        this();
+        _modulePrelevementAutomatique = module;
     }
 
     private boolean PeutFaireUnCaféSimple(double somme){
@@ -62,5 +71,11 @@ public class Machine {
 
     public void RéapprovisionnerSucre() {
         _sucre.Réapprovisionner();
+    }
+
+    public void PayerEnCB() {
+        var somme = 0.40;
+        var paiementRéussi = _modulePrelevementAutomatique.Prelever(somme);
+        if (paiementRéussi) this.Insérer(somme);
     }
 }

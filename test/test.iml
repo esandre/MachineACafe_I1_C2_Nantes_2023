@@ -25,5 +25,6 @@
       </library>
     </orderEntry>
     <orderEntry type="module" module-name="MachineACafe" scope="TEST" />
+    <orderEntry type="module" module-name="lib" scope="TEST" />
   </component>
 </module>
